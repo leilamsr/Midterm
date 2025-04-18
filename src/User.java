@@ -7,7 +7,7 @@ public class User {
     private ArrayList<User> followingList;
     private UserBehavior behavior;
     private ArrayList<Playlist> playlists;
-    private static ArrayList<User> allUsers;
+    private static ArrayList<User> allUsers = new ArrayList<>();
 
     public User(String username, String password) {
         for (User user : allUsers) {

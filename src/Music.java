@@ -5,7 +5,7 @@ public class Music {
     private String title;
     private User singer;
     private int numberOfStream = 0;
-    public static ArrayList<Music> allMusics;
+    public static ArrayList<Music> allMusics = new ArrayList<>();
 
     public Music(String title, User singer) {
         this.title = title;
