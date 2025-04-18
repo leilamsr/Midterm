@@ -14,7 +14,7 @@ public class Music {
     }
 
     public void play() {
-        System.out.println("اهنگ " + title + " با خواننده " + singer + "در حال پخش است.");
+        System.out.println("اهنگ " + title + " با خواننده " + singer.getUsername() + "در حال پخش است.");
         numberOfStream++;
     }
 
