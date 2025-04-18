@@ -24,20 +24,20 @@ public class User {
         allUsers.add(this);
     }
 
-    public void follow (User user){
+    public void follow (User user) {
         this.followerList.add(user);
         user.followingList.add(this);
     }
 
-    public void createPlaylist (String Title, User Owner){
+    public void createPlaylist (String Title, User Owner) {
         this.behavior.createPlaylist(Title, Owner);
     }
 
-    public void playMusic (Music music){
+    public void playMusic (Music music) {
         this.behavior.playMusic(music);
     }
 
-    public void buyPremium (User owner, int month){
+    public void buyPremium (User owner, int month) {
         this.behavior.buyPremium(owner, month);
     }
 
@@ -65,7 +65,7 @@ public class User {
         this.behavior = behavior;
     }
 
-    public void addPlaylist (Playlist playlist){
+    public void addPlaylist (Playlist playlist) {
         this.playlists.add(playlist);
     }
 }
