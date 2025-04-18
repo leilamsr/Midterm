@@ -9,7 +9,7 @@ public class RegularBehavior implements UserBehavior {
     @Override
     public void playMusic (Music music) {
         if (playingLimit <= 0) {
-            throw new InvalidOperationException("کاربر گرامی به حد مجاز استفاده روزانه خود رسیدهد اید!");
+            throw new InvalidOperationException("کاربر گرامی به حد مجاز استفاده روزانه خود رسیده اید!");
         }
         music.play();
         playingLimit--;
